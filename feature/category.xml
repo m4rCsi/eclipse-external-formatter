@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/ch.marcsi.eclipse.extformatter.feature_1.0.0.qualifier.jar" id="ch.marcsi.eclipse.extformatter.feature" version="1.0.0.qualifier">
+      <category name="ch.marcsi.eclipse"/>
+   </feature>
+   <category-def name="ch.marcsi.eclipse" label="marcsi.ch"/>
+</site>
