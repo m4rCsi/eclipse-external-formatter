@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.cdt.core.CodeFormatter">
+      <codeFormatter
+            class="ch.marcsi.eclipse.extformatter.ExtFormatter"
+            id="extformatter"
+            name="External Formatter">
+      </codeFormatter>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="ch.marcsi.eclipse.extformatter.preferences.PreferencePage"
+            id="ch.marcsi.eclipse.extformatter.preferences.PreferencePage"
+            name="External Code Formatter"/>
+   </extension>
+	<extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer class="ch.marcsi.eclipse.extformatter.preferences.PreferenceInitializer"/>
+   </extension>
+</plugin>
