@@ -5,4 +5,5 @@ package ch.marcsi.eclipse.extformatter.preferences;
  */
 public class PreferenceConstants {
 	public static final String COMMAND = "command";
+	public static final String DIFF = "diff";
 }

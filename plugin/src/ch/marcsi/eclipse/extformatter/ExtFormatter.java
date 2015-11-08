@@ -49,19 +49,25 @@ public class ExtFormatter extends CodeFormatter {
 			return null;
 		}
 		
+		boolean ad = store.getBoolean(PreferenceConstants.DIFF);
+		if (!ad) {
+			return new ReplaceEdit(offset,length,target);
+		}
+		
 		LinkedList<Diff> diffs = dmp.diff_main(ssource,target);
 		MultiTextEdit edits = new MultiTextEdit();
 		
-		int loc = 0;
+		int loc = offset;
 		for (Diff d : diffs) {
 			//Logger.logInfo(d.toString());
 			if (d.operation == Operation.EQUAL) {
+				loc += d.text.length();
 			} else if (d.operation == Operation.DELETE) {
 				edits.addChild(new DeleteEdit(loc, d.text.length()));
+				loc += d.text.length();
 			} else if (d.operation == Operation.INSERT) {
 				edits.addChild(new InsertEdit(loc, d.text));
 			}
-			loc += d.text.length();
 		}
 		return edits;
 	}

@@ -39,6 +39,7 @@ public class PreferencePage extends FieldEditorPreferencePage
 			+ " bar();\n" + " return 1;\n" + " } else \n" + " return 0;\n" + " }\n" + "}\n";
 
 	StringFieldEditor cmdField;
+	BooleanFieldEditor experimental;
 	Button runButton;
 	Document previewdocument;
 	FontFieldEditor fontEditor;
@@ -62,6 +63,9 @@ public class PreferencePage extends FieldEditorPreferencePage
 
 		cmdField = new StringFieldEditor(PreferenceConstants.COMMAND, "Command:", composite);
 		addField(cmdField);
+		
+		experimental = new BooleanFieldEditor(PreferenceConstants.DIFF, "only apply difference", composite);
+		addField(experimental);
 
 		Label label = new Label(composite, SWT.NONE);
 		label.setText("Preview:");
