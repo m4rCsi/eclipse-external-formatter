@@ -108,10 +108,10 @@ public class PreferencePage extends FieldEditorPreferencePage
 			ExtFormatter formatter = new ExtFormatter();
 			String formattedString;
 			String cmd = cmdField.getStringValue();
-			Logger.logInfo("run with command: " + cmd);
+			//Logger.logInfo("run with command: " + cmd);
 			formattedString = formatter.formatString(cmd, previewString);
 
-			Logger.logInfo("preview: " + formattedString);
+			//Logger.logInfo("preview: " + formattedString);
 			previewdocument.set(formattedString);
 
 			return true;
