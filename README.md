@@ -3,7 +3,7 @@ eclipse-external-formatter
 
 External Code Formatter for Eclipse. 
 
-On code format requests it redirects the request to a costumizable command.
+On code format requests it redirects the request to a customizable command.
 
 Tested with:
 - astyle
