@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="ch.marcsi.eclipse.extformatter.feature"
+      id="ch.marcsi.eclipse.extformatter"
       label="External Code Formatter"
       version="1.0.0.qualifier"
       provider-name="marcsi.ch">
@@ -40,5 +40,12 @@ SOFTWARE.
    <url>
       <update label="Marcsi.ch Eclipse Plugins" url="http://eclipse.marcsi.ch/updates/"/>
    </url>
+
+   <plugin
+         id="ch.marcsi.eclipse.extformatter"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
 </feature>
