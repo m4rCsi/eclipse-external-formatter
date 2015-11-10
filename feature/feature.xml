@@ -41,11 +41,4 @@ SOFTWARE.
       <update label="Marcsi.ch Eclipse Plugins" url="http://eclipse.marcsi.ch/updates/"/>
    </url>
 
-   <plugin
-         id="eclipse-external-formatter"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
 </feature>
